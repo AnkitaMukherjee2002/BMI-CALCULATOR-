@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@1,600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+     min-height: 100vh;
+     background: url('bg.jpg');
+     background-size: cover;
+     font-family: 'Nunito', sans-serif;
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box{
+    min-width: 300px;
+    background: #fafafa;
+    border-radius: 38px;
+    text-align: center;
+    position: relative;
+}
+
+.box::before {
+    content:'';
+    position: absolute;
+    height: 110%;
+    width: 110%;
+    left: -5%;
+    top: -5%;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 166px -31px rgba(0,0,0,0.15);
+    border-radius: 60px;
+    z-index: -1;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 36px;
+    padding: 30px 0;
+    color: rgb(66, 135, 245);
+}
+
+.content{
+    padding: 0 40px;
+}
+
+.input{
+    background: #e0d7d7;
+    box-shadow: 0px 0px 95px -30px rgba(0,0,0,0.15);
+    border-radius: 28px;
+    padding: 20px 0;
+    margin-bottom:20px;
+}
+
+.input label{
+    display: block;
+    font-size: 20px;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.input input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #4f7df9;
+    width: 60%;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Nunito', sans-serif;
+}
+
+button#calculate {
+    font-family: 'Nunito', sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: #7726fa;
+    font-size: 20px;
+    border-radius: 12px;
+    padding: 12px 0;
+    width: 100%;
+    outline: none;
+    border: none;
+    transition: background .2s ease;
+}
+
+button#calculate:hover {
+    background: rgb(38, 2, 95);
+}
+
+.result{
+    padding: 30px 20px;
+}
+
+.result p{
+    font-weight: 600;
+    font-size: 22px;
+    color:black;
+    margin-bottom: 15px;
+}
+
+.result #result{
+    font-size: 36px;
+    font-weight: 900;
+    color: #4f7df9;
+    background-color: beige;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 55px;
+    margin-bottom: 25px;
+}
+
+#comment {
+    color: #4f7df9;
+    font-weight: 800;
+}
